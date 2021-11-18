@@ -1,0 +1,27 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// AdminLte
+@import '../css/adminlte.min.css';
+
+@import '../css/main.css';
+
+@import '../css/bootstrap.min.css';
+
+// @import '../css/owl.carousel.min.css';
+
+@import '../css/owl.theme.default.min.css';
+
+@import '../css/select2.min.css';
+
+$fa-font-path: "../webfonts";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+@import "~@fortawesome/fontawesome-free/scss/regular";
