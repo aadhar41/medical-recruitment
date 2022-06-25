@@ -18,10 +18,12 @@ use Illuminate\Support\Facades\Storage;
 
 class JobDetailController extends Controller
 {
+
     /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
+     * It returns a view called front.jobdetails, and passes in the following variables: sociallinks,
+     * professions, specialties, states, cities, suburbs, jobtypes, settings.
+     * 
+     * @return A view with the name of jobdetails.blade.php
      */
     public function index()
     {
@@ -40,11 +42,12 @@ class JobDetailController extends Controller
 
 
     /**
-     * Display the specified resource.
-     *
-     * @param $slug
-     * @param  \App\Models\JobDetail  $jobDetail
-     * @return \Illuminate\Http\Response
+     * It fetches all the data from the database and passes it to the view
+     * 
+     * @param  \App\Models\JobDetail jobDetail This is the model that is being used to retrieve the data from the
+     * database.
+     * @param Request request Illuminate\Http\Request
+     * @param slug The slug of the job
      */
     public function show(JobDetail $jobDetail, Request $request, $slug)
     {
